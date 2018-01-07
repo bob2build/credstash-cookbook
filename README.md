@@ -1,4 +1,5 @@
 # credstash
 
-TODO: Enter the cookbook description here.
+A chef cookbook to install credstash tool.
 
+WIP:

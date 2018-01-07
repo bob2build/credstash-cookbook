@@ -19,8 +19,15 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[credstash::default]
+      - recipe[credstash::install]
+      - recipe[credstash::_test_setup]
     verifier:
       inspec_tests:
         - test/smoke/default
     attributes:
+      java:
+        install_flovor: oracle
+        jdk_version: 8
+        oracle:
+          accept_oracle_download_terms: true
+    

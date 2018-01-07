@@ -18,3 +18,9 @@ chef_version '>= 12.1' if respond_to?(:chef_version)
 # a Supermarket.
 #
 # source_url 'https://github.com/<insert_org_here>/credstash'
+
+depends 'chef-sugar'
+depends 'nodejs', '~> 5.0.0'
+depends 'java', '~> 1.50.0'
+depends 'maven', '~> 5.1.0'
+gem "rcredstash"
